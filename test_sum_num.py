@@ -6,3 +6,4 @@ def test_sum_numbers():
     assert summed_output_1 == 26
     assert summed_output_2 == 11
     assert summed_output_3 - 0.1 < 0.0001
+    
