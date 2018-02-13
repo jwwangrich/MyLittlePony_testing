@@ -7,8 +7,10 @@ def sum_numbers(num_list):
 
 def MaxDiff(num_list):
     max_diff = num_list[1] - num_list[0]
+    i = 0
+    j = i + 1
     for i in num_list:
-        for j in range(i+1, num_list):
+        for j in num_list:
             if (num_list[j] - num_list[i] > max_diff):
                 max_diff = num_list[j] - num_list[i]
     return max_diff
