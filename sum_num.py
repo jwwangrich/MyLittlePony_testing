@@ -4,7 +4,6 @@ def sum_numbers(num_list):
         sum = sum + num
     return sum
 
-
 def MaxDiff(num_list):
     max_diff = num_list[1] - num_list[0]
     i = 0
@@ -19,4 +18,3 @@ def find_extremes(list):
     Minimum = min(list)
     Maximum = max(list)
     return (Minimum, Maximum)
-
