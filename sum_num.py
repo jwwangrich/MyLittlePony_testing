@@ -69,9 +69,9 @@ def MaxDiff(num_list):
         i = 0
         j = i + 1
         for i in num_list:
-          for j in num_list:
-            if (j - i > max_diff):
-              max_diff = j - i
+            for j in num_list:
+                if (j - i > max_diff):
+                    max_diff = j - i
         return max_diff
     except TypeError:
         pass
