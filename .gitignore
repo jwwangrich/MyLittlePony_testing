@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 env
 !.gitignore
+=======
+env/
+_build/
+
+
+>>>>>>> ca4d8f26ce72e614d82ae86cb35531fb1fa6fa4b
