@@ -14,3 +14,9 @@ def MaxDiff(num_list):
             if (j-i > max_diff):
                 max_diff = j - i
     return max_diff
+
+def find_extremes(list):
+    Minimum = min(list)
+    Maximum = max(list)
+    return (Minimum, Maximum)
+
