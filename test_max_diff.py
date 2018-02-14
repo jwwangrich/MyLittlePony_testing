@@ -14,4 +14,4 @@ def test_max_diff():
     with pytest.raises(TypeError):
         MaxDiff('9', 5, 9, 5, 9, 5)
     with pytest.raises(ImportError):
-        import sum_num
+        import MyLittlePony_testing
