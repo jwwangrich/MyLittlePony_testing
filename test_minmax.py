@@ -6,4 +6,3 @@ def test_minmax():
     assert FindExtremesOutput1 == (-53, 0)
     assert FindExtremesOutput2 == (0, 10)
     assert FindExtremesOutput3 == (-3, 54)
-
