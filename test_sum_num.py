@@ -14,3 +14,4 @@ def test_sum_numbers():
         sum_numbers("1", 2, 3)
     with pytest.raises(ImportError):
         import MyLittlePony
+        
