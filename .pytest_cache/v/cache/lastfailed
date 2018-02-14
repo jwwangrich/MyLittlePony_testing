@@ -1,3 +1,4 @@
 {
-  "sum_num.py": true
+  "conf.py": true,
+  "docs/conf.py": true
 }

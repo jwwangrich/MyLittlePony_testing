@@ -164,6 +164,3 @@ texinfo_documents = [
      author, 'quit', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-

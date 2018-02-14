@@ -14,7 +14,9 @@ def sum_numbers(num_list=[]):
         logging.error("There is an ImportError")
         print("Requested import file does not exist.")
 
-    logging.basicConfig(filename='divlog.txt', format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',
+    logging.basicConfig(filename='divlog.txt',
+                        format='%(asctime)s %(message)s',
+                        datefmt='%m/%d/%Y %I:%M:%S %p',
                         level=logging.DEBUG)
 
     if len(num_list) == 0:
