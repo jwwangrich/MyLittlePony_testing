@@ -1,0 +1,43 @@
+# Set up logger
+import logging
+log_format = '%(levelname)s %(asctime)s %(message)s'
+logging.basicConfig(filename='divlog.txt', format= log_format, datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG,filemode ='w')
+logger = logging.getLogger()
+
+def findextremes(num_list):
+    """ returns the smallest and largest elements in an inputted list
+    :param: num_list
+    :returns: the smallest and largest elements in input num_list
+    :raises: TypeError: Inputs must be lists
+    :raises: ValueError: Elements in list must be real numbers
+    :raises: ImportError: Numpy must be installed in Env
+    """
+    try:
+        import numpy as np
+    except: ImportError
+    logging.error('Numpy must be installed in your local environment!')
+
+
+    try:
+        logger.info("# Find Minimum and Maximum")
+        logger.debug('Input: %s', str(num_list))
+        minimum = np.min(num_list)
+        maximum = np.max(num_list)
+    except: ValueError
+    logging.error("Value Error")
+
+    logger.info("# Return Minimum and Maximum")
+
+    return (minimum,maximum)
+
+output = findextremes([1,2,3,4])
+logger.debug('Output:%s', str(output))
+
+def contains_imaginary(num_list):
+    import numpy as np
+    is_real = np.isreal(num_list)
+    if is_real.contains("False"):
+        imaginary_elements = "True"
+    else:
+        imaginary_elements= "False"
+    return imaginary_elements
