@@ -119,10 +119,10 @@ def findextremes(num_list):
 
 
 def contains_imaginary(num_list):
-    '''Checks if input contains imaginary numbers
+    """Checks if input contains imaginary numbers
     :param: num_list
     :returns: Boolean indicating if the input contains imaginary numbers
-    '''
+    """
     import numpy as np
     is_real = np.isreal(num_list)
     if False in is_real:
@@ -133,9 +133,9 @@ def contains_imaginary(num_list):
 
 
 def check_list(num_list):
-    '''Checks if input is a list
+    """Checks if input is a list
     :param: num_list
-    :returns: Boolean indicating if the input data type is a list'''
+    :returns: Boolean indicating if the input data type is a list"""
     if type(num_list) == list:
         list_input = True
     else:
@@ -144,11 +144,11 @@ def check_list(num_list):
 
 
 def check_input(num_list):
-    '''Checks if the input meets all of the criteria required of minmax.py
+    """Checks if the input meets all of the criteria required of minmax.py
      :param: num_list
      :raises: TypeError: If the input is not a list
      :raises: TypeError: If the input list has no entries
-     :raises: ValueError: If the input list contains imaginary elements'''
+     :raises: ValueError: If the input list contains imaginary elements"""
     # Check that input is a list
     if check_list(num_list) is False:
         raise TypeError('Input must be a list')
